@@ -1,0 +1,96 @@
+/* .HomeMainWrapper {
+  min-height: 100vh;
+} */
+
+.HomeImageCorosal {
+  margin: 0.5rem 1rem;
+}
+
+.each-slide {
+  height: 40rem;
+  position: relative;
+}
+
+.imgcarousel {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.afterimage {
+  position: absolute;
+  bottom: 12px;
+  padding: 10px 20px;
+  background-color: rgba(55, 53, 53, 0.7);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 8px;
+  color: white;
+}
+
+.nav:first-of-type {
+  left: 12px !important;
+}
+
+.nav:last-of-type {
+  right: 12px !important;
+}
+
+.BodyWrapper {
+  flex-direction: column;
+  margin: 0.5rem 1rem;
+}
+
+.BodyHeader {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  padding: 0 5rem 0.5rem 5rem;
+}
+
+.Body {
+  margin: 1rem 0;
+}
+
+.BodyTxt {
+  overflow-wrap: break-word;
+}
+
+.Testimonial {
+  width: 50vw;
+}
+
+.TestimonialMainWrapper {
+  border: 1px solid rgb(94, 92, 92);
+  height: 15rem;
+  width: 40rem;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  padding: 2rem;
+  gap: 3rem;
+  border-radius: 12px;
+}
+
+.TestimonialPicture {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 12px;
+}
+
+.TestimonialName {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: serif;
+  text-transform: uppercase;
+}
+
+.PersonAndMessage {
+  flex-direction: column;
+  align-items: flex-start !important;
+  gap: 1rem;
+  width: 60%;
+  letter-spacing: 0.02em;
+  line-height: 1.3rem;
+  overflow-wrap: break-word;
+}

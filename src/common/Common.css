@@ -1,0 +1,132 @@
+.flex-c-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TopWrapper {
+  background-color: #274c77;
+  height: 5rem;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 0 1rem 0 1rem;
+}
+
+.TopLogo {
+  background-color: black;
+  height: 4rem;
+  width: 4rem;
+}
+
+.TopTitle {
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  font-weight: 1000;
+  letter-spacing: 0.2em;
+}
+
+.NavWrapper {
+  justify-content: space-evenly;
+  z-index: 10;
+  height: 2rem;
+  background-color: #80a1d4;
+  position: sticky;
+  top: 0px;
+}
+
+.NavItems {
+  height: 90%;
+  width: 12rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.NavItems:hover {
+  background-color: #edede9;
+}
+
+.NavItemActive {
+  background-color: #48d1cf;
+}
+
+.BottomWrapper {
+  background-color: #274c77;
+  color: white;
+}
+
+.BottomLeft {
+  align-self: flex-start;
+}
+
+.BottomHeader {
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  border-bottom: 1px solid black;
+  padding-left: 0.5rem;
+  margin: 1rem 0;
+}
+
+.BottomLeftItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-left: 1.5rem;
+}
+
+.SocialIcon {
+  height: 2rem;
+  width: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.SocialIcon:hover {
+  scale: 1.3;
+}
+
+.SocialIconCall {
+  transition: none;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.SocialIconCall:hover {
+  scale: 1;
+  cursor: auto;
+}
+
+.SocialAddressInfo {
+  color: white;
+  cursor: pointer;
+}
+
+.SocialAddressInfoCall {
+  cursor: auto;
+}
+
+.BottomRight {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+
+.CopyRightTxt {
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-top: 0.5px solid #142941;
+}
+
+.BottomRightInfo {
+  letter-spacing: 0.002em;
+  line-height: 1.5em;
+  margin: 0 0 0 1.5rem;
+}
