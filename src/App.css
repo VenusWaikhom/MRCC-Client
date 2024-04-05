@@ -92,6 +92,12 @@
     font-size: 0.7rem;
   }
 
+  img.EmployeePicture{
+     width:6rem;
+     height:6rem;
+  }
+ 
+
   div.Testimonial {
     width: 100vw;
   }
@@ -489,9 +495,6 @@
     height: 6rem;
   }
 
-img.EmployeePicture{
-width:6rem;
-height:6rem;}
 
   div.EmployeeInfo {
     font-size: 1rem;
