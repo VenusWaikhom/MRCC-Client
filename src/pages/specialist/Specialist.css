@@ -2,10 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin: 2rem 0 4rem 0;
-  /* min-height: 90vh; */
+  min-height: 90vh;
 }
 
 .EmployeeWrapper {
@@ -28,7 +28,15 @@
   height: 8rem;
   width: 8rem;
   border-radius: 12px;
-  background-color: grey;
+  padding: 0.2rem;
+  border: 2px solid rgb(36, 36, 36);
+}
+
+.EmployeePicture {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 12px;
+  margin: 0.5rem;
 }
 
 .EmployeeInfo {

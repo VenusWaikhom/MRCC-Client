@@ -5,6 +5,26 @@ import Nav from "../../common/nav-block/Nav";
 import "./contact.css";
 
 function ContactUs() {
+  const handleSubmit = () => {
+    const Name = document.getElementById("Name")?.value || "";
+    const Message = document.getElementById("Message")?.value || "";
+    const Email = document.getElementById("Email")?.value || "";
+
+    console.log("Name: " + Name + " Email: " + Email + " Message: " + Message);
+
+    fetch("https://mrcc-server.onrender.com/SendMail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: Name,
+        email: Email,
+        message: Message,
+      }),
+    });
+  };
+
   return (
     <div className="ContactUsWrapper">
       <Top />
@@ -28,25 +48,36 @@ function ContactUs() {
               <h3 className="MailInputHeader">Name</h3>
               <input
                 className="MailInput"
+                id="Name"
                 type="text"
                 placeholder="eg. Thoiba"
-              />
+              ></input>
             </div>
             <div className="MailInputs flex-c-c">
               <h3 className="MailInputHeader">Email</h3>
               <input
                 className="MailInput"
-                type="email"
+                id="Email"
+                type="text"
                 placeholder="thoiba@gmail.com"
-              />
+              ></input>
             </div>
             <div className="MailInputs flex-c-c">
               <h3 className="MailInputHeader">message</h3>
-              <input className="MailInput message " type="text" />
+              <textarea
+                className="MailInput message "
+                type="text"
+                id="Message"
+              ></textarea>
             </div>
           </div>
           <div className="EmailButtons flex-c-c">
-            <button className="EmailButton send flex-c-c">Send</button>
+            <button
+              className="EmailButton send flex-c-c"
+              onClick={handleSubmit}
+            >
+              Send
+            </button>
             <button className="EmailButton cancel flex-c-c">cancel</button>
           </div>
         </div>
