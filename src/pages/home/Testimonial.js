@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
-const Testimonial = () => {
+function Testimonial() {
   const [Data, SetData] = useState();
 
   useEffect(() => {
@@ -35,5 +35,6 @@ const Testimonial = () => {
       </Slide>
     </div>
   );
-};
+}
+
 export default Testimonial;

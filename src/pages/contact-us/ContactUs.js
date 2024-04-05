@@ -23,6 +23,7 @@ function ContactUs() {
         message: Message,
       }),
     });
+    window.location.reload();
   };
 
   return (
