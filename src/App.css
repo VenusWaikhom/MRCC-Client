@@ -489,6 +489,10 @@
     height: 6rem;
   }
 
+img.EmployeePicture{
+width:6rem;
+height:6rem;}
+
   div.EmployeeInfo {
     font-size: 1rem;
     line-height: 0.9rem;
