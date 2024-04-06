@@ -3,7 +3,7 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
 function Testimonial() {
-  const [Data, SetData] = useState();
+  const [Data, SetData] = useState(null);
 
   useEffect(() => {
     fetch("https://mrcc-server.onrender.com/Testimonials")
