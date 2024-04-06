@@ -136,6 +136,11 @@
     height: 5rem;
   }
 
+   img.EmployeePicture {
+    width: 6rem;
+    height: 6rem;
+  }
+
   div.EmployeeInfo {
     font-size: 0.8rem;
     line-height: 0.9rem;
@@ -334,6 +339,11 @@
     height: 6rem;
   }
 
+   img.EmployeePicture {
+    width: 6rem;
+    height: 6rem;
+  }
+
   div.EmployeeInfo {
     font-size: 0.9rem;
     line-height: 1rem;
@@ -489,6 +499,10 @@
     height: 6rem;
   }
 
+   img.EmployeePicture {
+    width: 6rem;
+    height: 6rem;
+  }
 
   div.EmployeeInfo {
     font-size: 1rem;
