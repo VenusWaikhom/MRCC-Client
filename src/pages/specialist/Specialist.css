@@ -50,4 +50,7 @@
 
 .EmployeeName {
   color: #22223b;
+  font-weight: 600 !important;
+  letter-spacing: 0.05em;
+  line-height: 1.5em !important;
 }
