@@ -24,7 +24,7 @@ function Home() {
           </div>
         </div>
         <div className="BodyWrapper flex-c-c">
-          <h2 className="BodyHeader">Services Avialable</h2>
+          <h2 className="BodyHeader">Services Available</h2>
           <div className="Body">
             <p className="BodyTxt">
               oaisudhglkasjdholkasjhdblkashdglakjshdgkasjhdg
