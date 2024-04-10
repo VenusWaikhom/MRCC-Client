@@ -94,3 +94,11 @@
   line-height: 1.3rem;
   overflow-wrap: break-word;
 }
+
+.react-multi-carousel-item {
+  width: 40rem !important;
+}
+
+.react-multi-carousel-track {
+  gap: 5rem !important;
+}
