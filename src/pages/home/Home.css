@@ -73,8 +73,8 @@
 }
 
 .TestimonialPicture {
-  height: 10rem;
-  width: 10rem;
+  height: 10rem !important;
+  width: 10rem !important;
   border-radius: 12px;
 }
 
@@ -93,12 +93,4 @@
   letter-spacing: 0.02em;
   line-height: 1.3rem;
   overflow-wrap: break-word;
-}
-
-.react-multi-carousel-item {
-  width: 40rem !important;
-}
-
-.react-multi-carousel-track {
-  gap: 5rem !important;
 }

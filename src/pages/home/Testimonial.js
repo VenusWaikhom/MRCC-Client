@@ -1,24 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2, // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-};
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 function Testimonial() {
   const [Data, SetData] = useState(null);
@@ -37,22 +19,15 @@ function Testimonial() {
       <div className="slide-container">
         <Carousel
           swipeable={true}
-          draggable={true}
-          showDots={false}
-          responsive={responsive}
-          ssr={true}
-          infinite={true}
+          showArrows={false}
+          infiniteLoop={true}
           autoPlay={true}
-          autoPlaySpeed={3000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          itemClass="carousel-item-padding-40-px"
-          focusOnSelect={true}
-          arrows={false}
-          centerMode={true}
+          interval={2000}
+          showStatus={false}
+          showIndicators={false}
+          transitionTime={1000}
+          stopOnHover={true}
+          emulateTouch={true}
         >
           {Data?.map((item, index) => (
             <div key={index} className="flex-c-c">
