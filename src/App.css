@@ -59,6 +59,10 @@
     margin-top: 0.3rem;
   }
 
+  div.HomeMainWrapper {
+    min-height: 0;
+  }
+
   div.each-slide {
     height: 15rem;
   }
