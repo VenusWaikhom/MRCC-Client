@@ -20,8 +20,7 @@ function ContactUs() {
         Message.value
     );
 
-    // fetch("https://mrcc-server.onrender.com/SendMail", {
-    fetch("http://localhost:3000/SendMail", {
+    fetch("https://mrcc-server.onrender.com/SendMail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,7 +34,7 @@ function ContactUs() {
       .then((res) => res.json())
       .then((json) => {
         console.log(json);
-        toast(json.msg);
+        toast(json.error);
       });
     Name.value = "";
     Message.value = "";
