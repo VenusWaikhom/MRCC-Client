@@ -7,11 +7,18 @@ import { toast } from "react-toastify";
 
 function ContactUs() {
   const handleSubmit = () => {
-    const Name = document.getElementById("Name")?.value || "";
-    const Message = document.getElementById("Message")?.value || "";
-    const Email = document.getElementById("Email")?.value || "";
+    let Name = document.getElementById("Name");
+    let Message = document.getElementById("Message");
+    let Email = document.getElementById("Email");
 
-    console.log("Name: " + Name + " Email: " + Email + " Message: " + Message);
+    console.log(
+      "Name: " +
+        Name.value +
+        " Email: " +
+        Email.value +
+        " Message: " +
+        Message.value
+    );
 
     // fetch("https://mrcc-server.onrender.com/SendMail", {
     fetch("http://localhost:3000/SendMail", {
@@ -20,9 +27,9 @@ function ContactUs() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        name: Name,
-        email: Email,
-        message: Message,
+        name: Name.value,
+        email: Email.value,
+        message: Message.value,
       }),
     })
       .then((res) => res.json())
@@ -30,7 +37,9 @@ function ContactUs() {
         console.log(json);
         toast(json.msg);
       });
-    window.location.reload();
+    Name.value = "";
+    Message.value = "";
+    Email.value = "";
   };
 
   return (
