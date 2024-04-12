@@ -3,6 +3,7 @@ import Top from "../../common/top-block/Top";
 import Bottom from "../../common/bottom-block/Bottom";
 import Nav from "../../common/nav-block/Nav";
 import "./contact.css";
+import { toast } from "react-toastify";
 
 function ContactUs() {
   const handleSubmit = () => {
@@ -12,7 +13,8 @@ function ContactUs() {
 
     console.log("Name: " + Name + " Email: " + Email + " Message: " + Message);
 
-    fetch("https://mrcc-server.onrender.com/SendMail", {
+    // fetch("https://mrcc-server.onrender.com/SendMail", {
+    fetch("http://localhost:3000/SendMail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -22,7 +24,12 @@ function ContactUs() {
         email: Email,
         message: Message,
       }),
-    });
+    })
+      .then((res) => res.json())
+      .then((json) => {
+        console.log(json);
+        toast(json.msg);
+      });
     window.location.reload();
   };
 
