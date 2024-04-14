@@ -11,7 +11,6 @@ function Specialist() {
     fetch("https://mrcc-server.onrender.com/Employees")
       .then((res) => res.json())
       .then((json) => {
-        console.log(json, "SHOW");
         SetData(json);
       });
   }, []);

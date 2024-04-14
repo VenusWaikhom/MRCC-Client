@@ -11,15 +11,6 @@ function ContactUs() {
     let Message = document.getElementById("Message");
     let Email = document.getElementById("Email");
 
-    console.log(
-      "Name: " +
-        Name.value +
-        " Email: " +
-        Email.value +
-        " Message: " +
-        Message.value
-    );
-
     fetch("https://mrcc-server.onrender.com/SendMail", {
       method: "POST",
       headers: {
@@ -33,7 +24,6 @@ function ContactUs() {
     })
       .then((res) => res.json())
       .then((json) => {
-        console.log(json);
         toast(json.error);
       });
     Name.value = "";

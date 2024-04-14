@@ -9,7 +9,6 @@ function Testimonial() {
     fetch("https://mrcc-server.onrender.com/Testimonials")
       .then((res) => res.json())
       .then((json) => {
-        console.log(json);
         SetData(json);
       });
   }, []);
